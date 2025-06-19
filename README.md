@@ -1,4 +1,4 @@
-# schedule-manage
+# schedule-manage-frontend
 基于智能调度与语义处理的Web日程管理应用前端
 =======
 # Vue 3 + Vite
