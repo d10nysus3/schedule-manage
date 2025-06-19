@@ -1,0 +1,41 @@
+{
+  "name": "sm2",
+  "private": true,
+  "version": "0.0.0",
+  "type": "commonjs",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "electron": "vite dev --watch & electron ."
+  },
+  "dependencies": {
+    "@element-plus/icons-vue": "^2.3.1",
+    "@fullcalendar/core": "^6.1.15",
+    "@fullcalendar/daygrid": "^6.1.15",
+    "@fullcalendar/interaction": "^6.1.15",
+    "@fullcalendar/resource-timeline": "^6.1.15",
+    "@fullcalendar/timegrid": "^6.1.15",
+    "@fullcalendar/vue3": "^6.1.15",
+    "axios": "^1.8.2",
+    "electron": "^35.0.1",
+    "element-plus": "^2.9.6",
+    "node-record-lpcm16": "^1.0.1",
+    "node-schedule": "^2.1.1",
+    "pinia": "^3.0.1",
+    "vite-plugin-electron": "^0.29.0",
+    "vite-plugin-electron-renderer": "^0.14.6",
+    "vue": "^3.5.13",
+    "vue-router": "^4.5.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.2.1",
+    "vite": "^6.2.0"
+  },
+  "main": "electron/main.js",
+  "build": {
+    "extraFiles": [
+      "electron/preload.js"
+    ]
+  }
+}
